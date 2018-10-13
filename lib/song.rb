@@ -38,7 +38,7 @@ class Song
     artist_name =  filename.split("-")[0]
     name = filename.split("-")[1].split(".")[0]
     song = self.new(name, artist_name)
-    song  
+    song
   end
 
   def self.alphabetical

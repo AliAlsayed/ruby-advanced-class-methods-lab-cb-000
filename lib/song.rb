@@ -2,7 +2,7 @@ class Song
   attr_accessor :name, :artist_name
   @@all = []
 
-  def initialize(name=nil)
+  def initialize(name=nil, artist_name=nil)
     @name = name
   end
 
@@ -32,6 +32,9 @@ class Song
     return song_found if song_found
     song = create_by_name(name)
     song
+  end
+
+  def self.new_from_filename(filename)
   end
 
   def self.alphabetical

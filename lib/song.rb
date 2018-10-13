@@ -39,6 +39,7 @@ class Song
     artist_name =  filename.split("-")[0].strip
     name = filename.split("-")[1].split(".")[0].strip
     song = self.new(name, artist_name)
+    song.save
     song
   end
 
